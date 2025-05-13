@@ -20,7 +20,7 @@ BEDROCK_MODEL_ID = "anthropic.claude-3-haiku-20240307-v1:0"
 @dataclass
 class QueryResponse:
     query_text: str
-    query_response: str
+    response_text: str
     sources : List[str]
 
 
