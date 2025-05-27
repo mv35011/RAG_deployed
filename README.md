@@ -27,14 +27,6 @@ A fully-deployed, scalable RAG (Retrieval-Augmented Generation) application that
 
 ---
 
-## 🏗️ Architecture Overview
 
-```mermaid
-graph TD
-    A[User Query] -->|API Request| B(API Gateway)
-    B --> C(Lambda)
-    C --> D[LangChain Pipeline]
-    D --> E[Vector Store (OpenSearch/Faiss)]
-    D --> F[Amazon Bedrock LLM]
     F --> G[Generated Response]
     G --> H[Client]
